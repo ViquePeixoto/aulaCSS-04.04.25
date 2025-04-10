@@ -6,102 +6,241 @@ body {
 }
 
 :root {
+    --branco: #ffffff;
+    --cinza: #e5e5e5;
     --azul: #32b9cd;
     --amarelo: #e3b062;
+    --rosa: #ef135b;
+    --rosaClaro: #dd6d94;
 }
 
-/*
-Proprieades do Header */
+/* Proprieades do Header */
 .header {
     background-color: black;
     border-bottom: 3px solid var(--azul);
-} .header .container {
+}
+
+.header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 120px;
-} .titulo {
+}
+
+.titulo {
     color: var(--azul);
-} .navbar {
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     color: var(--amarelo);
     list-style: none;
     width: 300px;
-} .navbar a {
+}
+
+.navbar a {
     color: var(--amarelo);
     text-decoration: none;
-} .agora {
+}
+
+.agora {
     font-weight: bolder;
 }
-/*
-Propriedades do Banner */
+
+/* Propriedades do Banner */
 .banner {
     height: 400px;
     width: 100%;
     background-image: url("../assets/imgs/bg-jelly-fish-para-home.png");
     background-size: cover;
-} .banner .container {
+}
+
+.banner .container {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-} .banner .container p {
+}
+
+.banner .container p {
     width: 170px;
     margin: 0;
     color: white;
     font-size: 24px;
-} .banner .container span {
+}
+
+.banner .container span {
     font-weight: bolder;
 }
 
-/* 
-Propriedades das tags MISSÃO, VISÃO E VALORES*/
-
+/* Propriedades das tags MISSÃO, VISÃO e VALORES */
 .social {
-    height: 400px; 
+    height: 400px;
     width: 100%;
     background-color: #dcdcdc;
-} .social .container {
+}
+
+.social .container {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-} .boxes {
+}
+
+.boxes {
     width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-} .box {
+}
+
+.box {
     width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-} .box img {
+}
+
+.box img {
     width: 120px;
     height: 120px;
-} .box h4 {
+}
+
+.box h4 {
     margin: 0;
     margin-top: 10px;
-    color: #e4005a; }
+    color: #e4005a;
+}
 
-/*
-Propriedade do Footer */
-
+/* Propriedade do Footer */
 .footer {
     height: 120px;
     width: 100%;
-    background-color: var(--azul);    
-} .footer .container {
+    background-color: var(--azul);
+}
+
+.footer .container {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color:white;
-} .footer h4 {
-    margin-bottom: 0; }
+    color: white;
+}
+
+.footer h4 {
+    margin-bottom: 0;
+}
+
+/* Adições para o Login*/
+.card-login h2 {
+    margin: 0px;
+}
+
+.login .container {
+    height: 700px;
+    width: 100%;
+    background-image: url("../assets/imgs/bg-jelly-fish-para_outras_pags.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao {
+    background-color: var(--rosa);
+    color: var(--branco);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    width: 180px;
+    height: 40px;
+    margin-top: 15px;
+    border: 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    color: var(--rosaClaro);
+    padding: 8px;
+}
+
+.campo h2 {
+    font-weight: bold;
+}
+
+.card .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario .campo input {
+    color: var(--cinza);
+    width: 430px;
+    padding: 10px;
+    border: 2px solid var(--azul);
+    border-radius: 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-login {
+    color: var(--rosaClaro);
+    background-color: var(--cinza);
+    height: 300px;
+    width: 600px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.card-login .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Adições para o Cadastro */
+
+.card-cadastro {
+    color: var(--rosaClaro);
+    background-color: var(--cinza);
+    height: 520px;
+    width: 600px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.card-cadastro .campo {
+    font-weight: 750;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
